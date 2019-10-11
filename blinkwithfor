@@ -1,0 +1,15 @@
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  for (int i=1;i<11;i++){ //inicia un ciclo en que una variable i varía desde 1 hasta 10 con un paso de 1
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(10*i);                       // wait for a i*10 msecond
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(10*i);                       // wait for a i*10 msecond
+  }
+  }
